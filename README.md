@@ -17,4 +17,7 @@ Il est possible de se faire restituer l'argent déjà introduit à tout moment p
 Si l'on a entré plus d'argent que nécessaire au moment de faire l'achat alors la machine renvoie la monnaie.
 
 
+Cette approche de solution utilise un modele à base d'evenements.
+La machine est constituée de plusieurs modules qui communique en envoyant un evenement à chaque fois qu'une condition est remplie.
+
 
