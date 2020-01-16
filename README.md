@@ -12,9 +12,7 @@ Leffe : 1,10 €
 
 Paix Dieu : 1,75 €
 
-Il est possible de se faire restituer l'argent déjà introduit à tout moment précedant l'achant en appuyant sur un bouton.
-
-Si l'on a entré plus d'argent que nécessaire au moment de faire l'achat alors la machine renvoie la monnaie.
+Il est possible de se faire restituer son crédit d'argent tout moment en appuyant sur un bouton.
 
 
 Cette approche de solution utilise un modele à base d'evenements.
