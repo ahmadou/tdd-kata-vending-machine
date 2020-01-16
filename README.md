@@ -1,20 +1,17 @@
 # vending-machine
 
 Le but de cet exercice est de modéliser un distributeur de boissons.
-La machine prend en entrée de l'argent et donne en échange une bouteille.
-Elle n'accepte en entrée que des pieces de 5 centimes, 10 centimes, 50 centimes 1 et deux euros.
+La machine prend en entrée de l'argent et suite à une commande donne en échange une bouteille.
 
-Elle vend trois boissons :
+Elle n'accepte comme pièces que des pieces de 5 centimes, 10 centimes, 50 centimes 1 et deux euros.
 
-Budweiser : 0,65 €
+Elle vend trois boissons et ne prend donc que trois commande :
 
-Leffe : 1,10 €
+Budweiser (coûte 0,65 €)
 
-Paix Dieu : 1,75 €
+Leffe (coûte 1,10 €)
 
-Il est possible de se faire restituer l'argent déjà introduit à tout moment précedant l'achant en appuyant sur un bouton.
+Paix Dieu (coûte 1,75 €)
 
-Si l'on a entré plus d'argent que nécessaire au moment de faire l'achat alors la machine renvoie la monnaie.
-
-
+Il est possible de se faire restituer son crédit d'argent à tout moment en appuyant sur un bouton.
 
