@@ -61,7 +61,6 @@ public class CreditManager implements PropertyChangeListener {
     }
 
 
-
     private boolean isThereEnoughCreditForPurchase(BigDecimal price) {
         return price.compareTo(this.credit) <= 0;
     }

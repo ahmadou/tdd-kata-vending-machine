@@ -13,6 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+
 import static pictime.dojo.vendingmachine.common.EventHandler.*;
 
 /**
@@ -33,10 +34,9 @@ public class InputDecoder implements PropertyChangeListener {
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
 
-        if (isEventOfType(Event.MACHINE_POWERED,evt.getPropertyName()) && evt.getNewValue() == Boolean.TRUE) {
+        if (isEventOfType(Event.MACHINE_POWERED, evt.getPropertyName()) && evt.getNewValue() == Boolean.TRUE) {
             readInput();
         }
-
     }
 
     /**

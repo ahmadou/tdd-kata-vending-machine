@@ -24,9 +24,10 @@ public class VendingMachineShould {
     /**
      * Construit une chaine a partir de chaque cmmande unitaire et les convertit en un tableau de byte qui servira a init un InputStream.
      * Ce dernier sera substitué a l'input stream systeme
+     *
      * @param commands
      */
-    private void initSystemWithChainOfInputs(String...commands) {
+    private void initSystemWithChainOfInputs(String... commands) {
         StringBuffer chainOfCommands = new StringBuffer();
         Arrays.asList(commands).stream().forEach(chainOfCommands::append);
         ByteArrayInputStream in = new ByteArrayInputStream(chainOfCommands.toString().getBytes());
@@ -36,6 +37,7 @@ public class VendingMachineShould {
     /**
      * Substitue au flux de sortie standard avec un bytearrayOutputStream.
      * cela nous permettra de lire ce qui aura été écrit par le programme
+     *
      * @return
      */
     private ByteArrayOutputStream switchSystemOutputStreamToByteArray() {
@@ -69,10 +71,10 @@ public class VendingMachineShould {
         }
         //Then
         assertEquals(Messages.INPUT_MESSAGE
-                +System.lineSeparator() + Messages.VOTRE_CRÉDIT_EST_DE + Coin.CINQUANTECTS.getValue()
-                +System.lineSeparator()
-                + Messages.INPUT_MESSAGE
-                +System.lineSeparator(),
+                        + System.lineSeparator() + Messages.VOTRE_CRÉDIT_EST_DE + Coin.CINQUANTECTS.getValue()
+                        + System.lineSeparator()
+                        + Messages.INPUT_MESSAGE
+                        + System.lineSeparator(),
                 byteArrayOutputStream.toString());
     }
 
@@ -93,11 +95,11 @@ public class VendingMachineShould {
         }
         //Then
         assertEquals(Messages.INPUT_MESSAGE
-                        +System.lineSeparator()
+                        + System.lineSeparator()
                         + Messages.ENTRÉE_INVALIDE
-                        +System.lineSeparator()
+                        + System.lineSeparator()
                         + Messages.INPUT_MESSAGE
-                        +System.lineSeparator(),
+                        + System.lineSeparator(),
                 byteArrayOutputStream.toString());
     }
 
